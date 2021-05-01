@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 /* Reset styles */
 * {
     margin: 0;
@@ -19,6 +20,17 @@
 body {
     background-image: url('./img/bg-stars.svg');
     background-color: var(--almostblack);
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+}
+
+header {
+    color: var(--white);
+    font-size: 1.5em ;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-align: center;
+    margin: 15vh 0;
 }
 
 footer {
