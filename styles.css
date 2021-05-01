@@ -20,3 +20,26 @@ body {
     background-image: url('./img/bg-stars.svg');
     background-color: var(--almostblack);
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-image: url('./img/pattern-hills.svg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 100vw;
+}
+
+.social-medias {
+    position: fixed;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    text-align: center;
+}
+
+.social-medias a {
+    margin-right: 15px;
+}
