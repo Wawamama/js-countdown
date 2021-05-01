@@ -1,0 +1,22 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --grayishblue: hsl(237, 18%, 59%);
+    --red: hsl(345, 95%, 68%);
+    --white: hsl(0, 0%, 100%);
+    --darkblue: hsl(236, 21%, 26%);
+    --verydarkblue: hsl(235, 16%, 14%);
+    --almostblack: hsl(234, 17%, 12%);
+}
+
+
+body {
+    background-image: url('./img/bg-stars.svg');
+    background-color: var(--almostblack);
+}
