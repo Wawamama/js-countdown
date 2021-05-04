@@ -55,3 +55,7 @@ footer {
 .social-medias a {
     margin-right: 15px;
 }
+
+svg:hover {
+    fill:red !important;
+}
