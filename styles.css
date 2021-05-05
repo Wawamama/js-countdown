@@ -56,6 +56,11 @@ footer {
     margin-right: 15px;
 }
 
-svg:hover {
-    fill:red !important;
+.social-medias svg {
+    fill:#8385A9;
+}
+
+.social-medias svg:hover {
+    fill: var(--red);
+    transition: 200ms linear;
 }
