@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./node_modules/flipdown/dist/flipdown.css">
-  <script type="text/javascript" src="./node_modules/flipdown/dist/flipdown.js"></script>
+  <script type='text/javascript' src="countdown.js"></script>
   <title>Frontend Mentor | Launch countdown timer</title>
 
 </head>
@@ -17,7 +16,35 @@
 <header>We're launching soon</header>
 <main>
   <div class="countdown-container">
-      <div id="flipdown" class="flipdown"></div>
+      <div id="days">
+        <div class="top-case"></div>
+        <div class="bottom-case"></div>
+        <div id="counting-days" class="number"></div>
+      </div>
+      
+      <div id="hours">
+        <div class="top-case"></div>
+        <div class="bottom-case"></div>
+        <div id="counting-hours" class="number"></div>
+      </div>
+
+      <div id="minutes">
+        <div class="top-case"></div>
+        <div class="bottom-case"></div>
+        <div id="counting-minutes" class="number"></div>
+      </div>
+
+      <div id="seconds">
+        <div class="top-case"></div>
+        <div class="bottom-case"></div>
+        <div id="counting-seconds" class="number"></div>
+      </div>
+
+
+      <div class="label">Days</div>
+      <div class="label">hours</div>
+      <div class="label">minutes</div>
+      <div class="label">seconds</div>
   </div>
 </main>
 <footer>

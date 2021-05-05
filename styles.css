@@ -64,3 +64,52 @@ footer {
     fill: var(--red);
     transition: 200ms linear;
 }
+
+.countdown-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: minmax(150px, 1fr) 2vh;
+    gap: 2vh;
+    width: 80vw;
+    max-width: 750px;
+    margin: auto;
+}
+
+#days, #hours, #minutes, #seconds {
+    position: relative;
+}
+
+
+.number {
+    color: var(--red);
+    font-size: 4em;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.label {
+    text-transform: uppercase;
+    color:var(--grayishblue);
+    letter-spacing: .3rem;
+    text-align: center;
+}
+
+.top-case, .bottom-case {
+    position: relative;
+    background-color: var(--darkblue);
+    width: 100%;
+    height: 50%;
+}
+
+.top-case {
+    border-radius: 5px 5px 0 0;
+    opacity: 0.8;
+}
+
+.bottom-case {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 8px 5px rgb(0, 0, 22);
+}
