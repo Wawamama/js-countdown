@@ -67,10 +67,11 @@ footer {
 
 .countdown-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
-    grid-template-rows: minmax(150px, 1fr) 2vh;
-    gap: 2vh;
-    width: 80vw;
+    grid-template-columns: repeat(4, minmax(20%, 100px));
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    gap: 1rem;
+    height: 200px;
     max-width: 750px;
     margin: auto;
 }
@@ -107,9 +108,35 @@ footer {
 .top-case {
     border-radius: 5px 5px 0 0;
     opacity: 0.8;
+    position: relative;
 }
 
 .bottom-case {
     border-radius: 0 0 5px 5px;
     box-shadow: 0 8px 5px rgb(0, 0, 22);
+    position: relative;
+}
+
+.bottom-case:before {
+    content: '';
+    z-index: 2;
+    background-color: var(--almostblack);
+    border-radius: 50%;
+    position: absolute;
+    top: -8%;
+    left: -3%;
+    width: 9px;
+    height: 9px;
+}
+
+.bottom-case::after {
+    content: '';
+    z-index: 2;
+    background-color: var(--almostblack);
+    border-radius: 50%;
+    position: absolute;
+    top: -8%;
+    right: -3%;
+    width: 9px;
+    height: 9px;
 }

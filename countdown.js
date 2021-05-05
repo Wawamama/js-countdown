@@ -1,4 +1,4 @@
-const countdownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 
+const countdownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 7 days from now
 
 let countdown = () => {
     let now = new Date().getTime();
@@ -23,4 +23,3 @@ let countdown = () => {
 // Execute countdown function every 1sec
 window.setInterval(countdown, 1000);
 
-console.log('hey')
